@@ -149,6 +149,18 @@ img {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
+}
+
+.header-nav-list-item-active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--iris-cl);
+    border-radius: 2px;
 }
 
 .address-link {
