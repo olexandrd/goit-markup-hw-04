@@ -8,6 +8,7 @@
     --border-cl: #E7E9FC;
     --lightslate-cl: #8E8F99;
     --dairy-cl: #FCFCFC;
+    --green-cl: #31d0aa;
     --main-font: Roboto, sans-serif;
     --secondary-font: Raleway, sans-serif;
     --intendance: 24px;
@@ -251,6 +252,13 @@ img {
     justify-content: center;
     align-items: center;
     background-color: var(--iris-cl);
+    transition: background-color var(--transform-properties), border var(--transform-properties);
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+    background-color: var(--green-cl);
+    border: 1px solid var(--green-cl);
 }
 
 .footer-social-link svg {
@@ -429,12 +437,21 @@ img {
     align-items: center;
     background-color: var(--iris-cl);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color var(--transform-properties), border var(--transform-properties);
+}
+
+.team-social-item:hover,
+.team-social-item:focus {
+    background-color: var(--ocean-cl);
+    border: 1px solid var(--ocean-cl);
 }
 
 .team-social-link svg {
     display: block;
     fill: var(--white-cl);
 }
+
+
 
 .customers {
     display: flex;
