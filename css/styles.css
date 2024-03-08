@@ -627,8 +627,8 @@ img {
     overflow: hidden;
 }
 
-.portfolio-item-wrapper:hover .portfolio-overlay,
-.portfolio-item-wrapper:focus .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay,
+.portfolio-item:focus .portfolio-overlay {
     transform: translateY(0);
 }
 
