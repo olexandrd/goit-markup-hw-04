@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6,
-p, 
+p,
 ul,
 ol {
     margin: 0;
@@ -124,7 +124,7 @@ img {
 
 .header {
     border-bottom: 1px solid var(--border-cl);
-} 
+}
 
 .header .container {
     display: flex;
@@ -149,18 +149,6 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    position: relative;
-}
-
-.header-nav-list-item-active::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--iris-cl);
-    border-radius: 2px;
 }
 
 .address-link {
@@ -174,6 +162,22 @@ img {
     padding: 24px 0;
     display: block;
     transition: color var(--transform-properties);
+    position: relative;
+}
+
+.header-link-active {
+    color: var(--iris-cl);
+}
+
+.header-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--iris-cl);
+    border-radius: 2px;
 }
 
 .address-link:hover,
@@ -205,11 +209,11 @@ img {
     flex-direction: row;
     gap: 120px;
     align-items: flex-start;
-}   
+}
 
 .footer-social-section .footer-text {
     display: block;
-    max-width: 96px;
+    font-weight: 500;
 
 }
 
@@ -243,7 +247,7 @@ img {
     justify-content: center;
 }
 
-.footer-social-item {
+.footer-social-link {
     width: 40px;
     height: 40px;
     border: 1px solid var(--iris-cl);
@@ -255,8 +259,8 @@ img {
     transition: background-color var(--transform-properties), border var(--transform-properties);
 }
 
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: var(--green-cl);
     border: 1px solid var(--green-cl);
 }
@@ -265,6 +269,7 @@ img {
     display: block;
     fill: var(--white-cl);
 }
+
 /**
   |############################
   | STUDIO styles
@@ -286,11 +291,9 @@ img {
   |############################
 */
 .hero {
-    background-image: 
-        linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-        ), 
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
         url(../images/hero/img-01.jpg);
     background-color: var(--navyblue-cl);
 }
@@ -344,6 +347,7 @@ img {
 .advantage {
     padding-top: var(--section-padding);
 }
+
 .advantage-subtitle {
     color: var(--navyblue-cl);
 }
@@ -387,6 +391,7 @@ img {
     width: 360px;
     height: auto;
 }
+
 /**
   |############################
   | TEAM
@@ -407,6 +412,7 @@ img {
     background-color: var(--white-cl);
     display: flex;
     flex-direction: column;
+    padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -418,13 +424,14 @@ img {
 
 .team-text {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-social-list {
     display: flex;
     gap: var(--intendance);
     justify-content: center;
-    padding: 8px 16px 32px 16px;
+    /* padding: 8px 16px 32px 16px; */
 }
 
 .team-social-item {
@@ -473,7 +480,7 @@ img {
     justify-content: center;
     align-items: center;
     width: 1158px;
-    
+
 }
 
 .customers-item {
@@ -595,10 +602,10 @@ img {
     border-radius: 4px;
     padding: 12px 24px;
     box-sizing: border-box;
-    transition: 
-        background-color var(--transform-properties), 
-        color var(--transform-properties), 
-        box-shadow var(--transform-properties), 
+    transition:
+        background-color var(--transform-properties),
+        color var(--transform-properties),
+        box-shadow var(--transform-properties),
         border var(--transform-properties);
 }
 
@@ -636,7 +643,7 @@ img {
 .portfolio-item-link {
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .portfolio-item-wrapper {
